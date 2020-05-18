@@ -1,0 +1,14 @@
+version: '3'
+services:
+  udagram-user-api:
+    image: devf1d/udagram-user-api
+    build:
+      context: ./projects/udagram-user-api
+  udagram-feed-api:
+    image: devf1d/udagram-feed-api
+    build:
+      context: ./projects/udagram-feed-api
+  udagram-frontend:
+    image: devf1d/udagram-frontend
+    build:
+      context: ./projects/udagram-frontend
